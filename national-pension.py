@@ -73,8 +73,8 @@ class PensionData():
 
 @st.cache_data
 def read_pensiondata():
-    # data = PensionData('https://www.dropbox.com/s/nxeo1tziv05ejz7/national-pension.csv?dl=1')
-    data = PensionData('./data/국민연금공단_국민연금 가입 사업장 내역_20251124.csv')
+    data = PensionData('https://www.dropbox.com/s/nxeo1tziv05ejz7/national-pension.csv?dl=1')
+    # data = PensionData('./data/국민연금공단_국민연금 가입 사업장 내역_20251124.csv')
     return data
 
 data = read_pensiondata()
@@ -152,3 +152,4 @@ if data and company_name:
         
     else:
         st.subheader('검색결과가 없습니다')
+
